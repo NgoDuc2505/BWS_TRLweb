@@ -1,0 +1,7 @@
+#logo {
+    width: 100px;
+    height: 40px;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHR1OXkxcXN3b3UxZXp0MjBpMmN3azFkeHQ4OWxia3Fmd3d4MmlkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h8sVibFE0NChi/giphy.gif");
+    background-size: cover;
+    background-position: center;
+}
