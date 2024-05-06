@@ -1,26 +1,30 @@
-import Content from "./components/Content/Content"
-import Carousel from "./components/Courousel/Carousel"
-import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
-import SubHead from "./components/Sub-header/SubHead"
+import Content from "./components/Content/Content";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DetailContent from "./pages/DetailContent/DetailContent.jsx";
+import RootRoute from "./pages/RootRoute.jsx";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootRoute />,
+    children: [
+      {
+        path: "detail",
+        element: <DetailContent></DetailContent>,
+        children: [
+          
+        ]
+      },
+      {
+        path: "",
+        element: <Content></Content>
+      }
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div>
-      {/* Hung */}
-      <Header></Header>
-      <SubHead></SubHead>
-      {/* duy */}
-      <Carousel></Carousel>
-      {/* Quan */}
-      <Content></Content>
-      {/* Duc */}
-      <Footer></Footer>
-      {/* Login
-      Register */}
-    </div>
-  )
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
-export default App
+export default App;
