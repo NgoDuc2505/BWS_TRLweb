@@ -1,7 +1,38 @@
-#logo {
-    width: 100px;
-    height: 40px;
-    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHR1OXkxcXN3b3UxZXp0MjBpMmN3azFkeHQ4OWxia3Fmd3d4MmlkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h8sVibFE0NChi/giphy.gif");
-    background-size: cover;
-    background-position: center;
+/* Header.css */
+header {
+  height: 75px;
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+ .logo {
+    width: 50px;
+  }
+ .nav-dropdown {
+    display: none;
+  }
+ .search-form {
+    display: none;
+  }
+ .about-resource-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+ .logo {
+    width: 30px;
+  }
+ .nav-dropdown {
+    display: block;
+  }
+ .search-form {
+    display: block;
+  }
+ .about-resource-btn {
+    display: block;
+  }
+ .login-signup-btn {
+    display: block;
+  }
 }
