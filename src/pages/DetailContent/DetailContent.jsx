@@ -1,5 +1,6 @@
 import React from "react";
 import { PlusOutlined, LikeOutlined } from "@ant-design/icons";
+
 import {
   Menu,
   Typography,
@@ -12,6 +13,7 @@ import {
   Image,
 } from "antd";
 import Index from "../../components/Error_IMG_display/Index";
+import { NavLink } from "react-router-dom";
 
 const { Title, Paragraph, Text, Link } = Typography;
 const blockContent = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit architecto quaerat, consequuntur inventore quo accusamus. Eius sunt molestiae ducimus perspiciatis molestias dolore blanditiis corrupti non repellendus? Earum, sed sint hic assumenda reiciendis incidunt deleniti recusandae, dolore, veniam minus natus.`;
@@ -171,6 +173,9 @@ function DetailContent() {
         />
         <div className="right_content p-4 w-75">
           <Breadcrumb separator="" items={navLocation} />
+          <NavLink to={'/detail/html'}>go to HTML</NavLink>
+          {/* =========this is a===================================================================================== */}
+          <a href="/detail/html">go to home</a>
           <Flex vertical={false} justify="space-between">
             <Title className="mt-2">Introduction</Title>
             <Row gutter={16} style={{ width: "20%" }}>
