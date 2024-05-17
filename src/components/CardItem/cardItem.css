@@ -1,0 +1,43 @@
+.meta_antd_custom .ant-card-meta-description {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.card_content_display {
+  overflow: hidden;
+  scale: 100%;
+  transition: all 0.5s;
+}
+.card_content_display .ant-card-cover {
+  box-shadow: 0px 0px 0px 0px #607d8b73;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.card_content_display .ant-card-cover img {
+  scale: 100%;
+  transition: all 0.5s;
+}
+.card_content_display .ant-card-cover:hover {
+  box-shadow: 0px 0px 20px 20px #607d8b73;
+}
+.card_content_display .ant-card-cover:hover img {
+  scale: 110%;
+}
+
+.card_content_display:hover {
+  scale: 105%;
+}
+
+.card_btn{
+    width: 80%;
+    position: relative;
+    z-index: 5;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.card_btn:hover{
+    font-weight: 700;
+}
