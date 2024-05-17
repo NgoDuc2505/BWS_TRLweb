@@ -1,9 +1,8 @@
 import "./content.css";
 import { Row, Typography } from "antd";
 import CardItem from "../CardItem/CardItem";
-import { data } from "./content.js";
+import { data } from "../../handler/Content/main.js";
 import "animate.css";
-import { Parallax } from "react-parallax";
 import Discount from "../DiscountShow/Discount.jsx";
 
 function Content() {

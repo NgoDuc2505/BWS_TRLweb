@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootRoute from "../pages/RootRoute";
-import DetailContent from "../pages/DetailContent/DetailContent";
-import Content from "../components/Content/Content";
+
+import DetailCourse from "../components/DetailCourse/DetailCourse";
+import HomePart from "../pages/HomePage/HomePart";
+import DetailContent from "../components/DetailContent/DetailContent";
 
 const router = createBrowserRouter([
   {
@@ -12,12 +14,15 @@ const router = createBrowserRouter([
         path: "detail",
         element: <DetailContent></DetailContent>,
         children: [
-           
+           {
+            path:":idCourse",
+            element: <DetailCourse></DetailCourse>,
+           }
         ],
       },
       {
         path: "/",
-        element: <Content></Content>,
+        element: <HomePart></HomePart>,
       },
     ],
   },

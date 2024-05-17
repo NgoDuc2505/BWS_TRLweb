@@ -6,7 +6,7 @@ function Discount() {
     <Parallax
     bgImage="img/study.jpg"
     style={{height: "300px"}}
-    className='mt-5 rounded'
+    className='mt-5 rounded wow animate__animated animate__backInDown'
     strength={200}
     renderLayer={(percentage) => (
       <div>
