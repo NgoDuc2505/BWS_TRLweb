@@ -25,7 +25,7 @@ function CardItem(item) {
         }
         actions={[
           <button key="bnt_bs_enter" className="card_btn btn btn-success" onClick={()=>{handleClickEnter(id)}}>Enter</button>,
-          <button key="bnt_bs_buy" className="card_btn btn btn-warning" onClick={()=>{handleClickBuy(id)}}>Buy Pro</button>
+          <button key="bnt_bs_buy" className="card_btn btn btn-warning" onClick={()=>{handleClickBuy(id)}}>Practice</button>
         ]}
       >
         <Meta
