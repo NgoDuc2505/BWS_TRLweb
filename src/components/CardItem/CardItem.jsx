@@ -2,9 +2,14 @@
 import { Avatar, Card, Col } from "antd";
 import Meta from "antd/es/card/Meta";
 import './cardItem.css'
+import { useNavigate } from "react-router-dom";
 function CardItem(item) {
   const { imgUrl, title, describe, id } = item.item;
+  const navigate = useNavigate();
   const handleClickEnter = (id)=>{
+    navigate(`detail/${id}`);
+  }
+  const handleClickBuy = (id)=>{
     console.log(id)
   }
   return (
@@ -20,7 +25,7 @@ function CardItem(item) {
         }
         actions={[
           <button key="bnt_bs_enter" className="card_btn btn btn-success" onClick={()=>{handleClickEnter(id)}}>Enter</button>,
-          <button key="bnt_bs_buy" className="card_btn btn btn-warning">Buy Pro</button>
+          <button key="bnt_bs_buy" className="card_btn btn btn-warning" onClick={()=>{handleClickBuy(id)}}>Buy Pro</button>
         ]}
       >
         <Meta

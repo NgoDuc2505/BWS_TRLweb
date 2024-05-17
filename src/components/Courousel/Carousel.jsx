@@ -3,7 +3,6 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState, useRef } from 'react';
-import landscape from './landscape.jpg';
 import CircleType from 'circletype';
 
 function Carousel() {
@@ -51,7 +50,7 @@ function Carousel() {
           <div className="bg">
             {!isLoaded && (
               <img
-                src={landscape}
+                src="img/landscape.jpg"
                 onLoad={() => {
                   setIsLoaded(true);
                 }}
