@@ -1,0 +1,45 @@
+.content_extra {
+  width: 100%;
+  background-color: #f0ffff;
+  padding: 20px 0;
+}
+
+.img_bg_display {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.img_bg_display .color_display_theme {
+  width: 100%;
+  height: 100%;
+}
+
+.img_bg_display .title_course_display_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.img_bg_display .title_course_display {
+  font-size: 8rem;
+  margin: 0;
+  line-height: 8rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content_extra .card_antd_custom {
+  overflow: hidden;
+}
+.content_extra .ant-card-body {
+  padding: 0;
+}
+
+.btn_ct_extra{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+}
