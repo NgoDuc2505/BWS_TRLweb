@@ -13,7 +13,7 @@ function CardItem(item) {
     console.log(id)
   }
   return (
-    <Col span={6} style={{ padding: "10px" }} className="wow animate__animated animate__backInLeft">
+    <Col span={6} style={{ padding: "10px" }} className="wow animate__animated animate__fadeIn">
       <Card
         className="card_content_display"
         cover={

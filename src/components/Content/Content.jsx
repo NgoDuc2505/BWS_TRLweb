@@ -18,7 +18,7 @@ function Content() {
             return <CardItem key={index} item={item}></CardItem>;
           })}
         </Row>
-        <Discount></Discount>
+        {/* <Discount></Discount> */}
       </div>
     </div>
   );
