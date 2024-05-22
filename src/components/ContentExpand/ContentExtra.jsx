@@ -1,4 +1,4 @@
-import { Card, Col, Row, Space, Typography } from "antd";
+import { Col, Row, Space, Typography } from "antd";
 import ContentExtraItem from "../ContentExtraItem/ContentExtraItem";
 import "./content_extra.css";
 import {
@@ -13,8 +13,10 @@ function ContentExtra() {
   const { Title } = Typography;
   return (
     <div className="content_extra">
-      <div className="container">
-        <Title level={1} className="text-center mt-5 mb-3">Feature Course</Title>
+      <div className="container-lg">
+        <Title level={1} className="text-center mt-5 mb-3">
+          Feature Course
+        </Title>
         <Row align={"middle"}>
           <Col span={24}>
             <Space direction="vertical" style={{ width: "100%", gap: "20px" }}>
