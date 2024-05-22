@@ -37,9 +37,24 @@
   padding: 0;
 }
 
-.btn_ct_extra{
-    width: 200px;
-    height: 45px;
-    font-size: 20px;
-    font-weight: 700;
+.btn_ct_extra {
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576.22px) {
+  .img_bg_display .title_course_display {
+    font-size: 5rem;
+  }
+  .title_course_display_wrapper {
+    display: block;
+  }
+  .title_course_display_main{
+    max-width: unset;
+  }
+  .right_extra_item_content{
+    display: none;
+  }
 }

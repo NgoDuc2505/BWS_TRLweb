@@ -3,7 +3,7 @@ import { Row, Typography } from "antd";
 import CardItem from "../CardItem/CardItem";
 import { data } from "../../handler/Content/main.js";
 import "animate.css";
-import Discount from "../DiscountShow/Discount.jsx";
+// import Discount from "../DiscountShow/Discount.jsx";
 
 function Content() {
   const { Title } = Typography;

@@ -1,14 +1,8 @@
 import { Suspense } from "react";
 import { PlusOutlined } from "@ant-design/icons";
 
-import {
-  Menu,
-  Flex,
-  Breadcrumb,
-} from "antd";
+import { Menu, Flex, Breadcrumb } from "antd";
 import { Outlet } from "react-router";
-
-
 
 const items = [
   {
@@ -148,9 +142,9 @@ const navLocation = [
 ];
 
 function DetailContent() {
-    const handleGetContent = (e)=>{
-        console.log(e)
-    }
+  const handleGetContent = (e) => {
+    console.log(e);
+  };
   return (
     <div>
       <Flex vertical={false}>
