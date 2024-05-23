@@ -56,6 +56,9 @@ function Login() {
               <MDBInput wrapperClass='mb-4' label='Email' id='form3' type='email'/>
               <MDBInput wrapperClass='mb-4' label='Password' id='form4' type='password'/>
 
+              <MDBInput wrapperClass='mb-4' label='Confirm password' id='form4' type='password'/>
+              
+
               <div className='d-flex justify-content-center mb-4'>
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
               </div>
