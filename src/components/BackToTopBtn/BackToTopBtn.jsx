@@ -1,20 +1,16 @@
-import { Button } from "antd"
-import "./backToTop.css"
-import { scrollToTp } from "../../handler/Global_Handler/scrollToTop"
-import { UpOutlined } from "@ant-design/icons"
-
-function BackToTopBtn() {
-    const handleScrollToTop=(e)=>{
-        scrollToTp();
-        console.log(e);
-    }
+import { Button } from "antd";
+import "./backToTop.css";
+import { UpOutlined } from "@ant-design/icons";
+import "animate.css";
+import { scrollToTp } from "../../handler/Global_Handler/scrollToTop";
+function BackToTopBtn({ isDisplay }) {
   return (
-    <div className="btn_back_to_top" onScroll={handleScrollToTop}>
-        <Button className="btn btn-warning">
+    <div className={`${isDisplay ? '':'d-none'} btn_back_to_top wow animate__animated animate__fadeInDown`}>
+      <Button className="btn btn-warning" onClick={scrollToTp}>
         <UpOutlined></UpOutlined>
-        </Button>
+      </Button>
     </div>
-  )
+  );
 }
 
-export default BackToTopBtn
+export default BackToTopBtn;

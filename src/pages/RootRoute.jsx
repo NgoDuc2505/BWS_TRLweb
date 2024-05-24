@@ -8,9 +8,19 @@ import BackToTopBtn from "../components/BackToTopBtn/BackToTopBtn";
 
 function RootRoute() {
   const location = useLocation();
+  const [scrollY,setScrollY] = useState(false);
   useEffect(() => {
     scrollToTp();
   }, [location.pathname]);
+  const onScrollDetect = () => {
+    const scrlY = window.scrollY;
+    if(scrlY >= 500 && !scrollY){
+      setScrollY(true);
+    }else if(scrlY < 500 && scrlY){
+      setScrollY(false);
+    }
+  };
+  window.onscroll = onScrollDetect;
   return (
     <div>
       <Header></Header>
@@ -19,7 +29,7 @@ function RootRoute() {
         <Outlet></Outlet>
       </Suspense>
       <Footer></Footer>
-      <BackToTopBtn></BackToTopBtn>
+      <BackToTopBtn isDisplay={scrollY}></BackToTopBtn>
     </div>
   );
 }
