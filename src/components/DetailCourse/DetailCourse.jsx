@@ -2,12 +2,29 @@ import { LikeOutlined } from "@ant-design/icons";
 import { Col, Divider, Flex, Image, Row, Statistic, Typography } from "antd";
 import Index from "../Error_IMG_display/Index";
 import { useParams } from "react-router";
+import axios from "axios";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setCurrentCourse } from "../../Redux/courseSlice";
 
 function DetailCourse() {
   const param = useParams();
-  console.log(param);
+  const dispatch = useDispatch();
   const { Title, Paragraph, Text, Link } = Typography;
   const blockContent = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit architecto quaerat, consequuntur inventore quo accusamus. Eius sunt molestiae ducimus perspiciatis molestias dolore blanditiis corrupti non repellendus? Earum, sed sint hic assumenda reiciendis incidunt deleniti recusandae, dolore, veniam minus natus.`;
+  useEffect(() => {
+    const getData = async () => {
+      const data = await axios({
+        method: "get",
+        url: "https://bwd-trl-be.onrender.com/course/cdetail/html",
+      });
+      if(data){
+        const rs = data.data.content;
+        dispatch(setCurrentCourse(rs));
+      }
+    };
+    getData();
+  }, []);
   return (
     <div className="detail_course">
       <Flex vertical={false} justify="space-between">
