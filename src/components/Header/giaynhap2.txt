@@ -1,47 +1,84 @@
 import React, { useEffect } from 'react';
-import { useState } from 'react';
-//logo test
+import { Helmet } from 'react-helmet';
 import logo from './AI-logo.png';
-
-//css của header
 import "./header.css";
-//import "./newcss.css";
-
-//tập lệnh tương tác của danh mục và nav menu button
+import "./newcss.css";
 import headerHandler from './headerHandler';
 
 function Header() {
 
-  //sử dụng tập lệnh
   useEffect(() => {
     headerHandler();
+    const script1 = document.createElement('script');
+    script1.type = 'text/javascript';
+    script1.text = `
+    var $ = jQuery.noConflict();
+    (function($){
+        'use strict';
+        function TermsAndConditions() {
+            days = 30;
+            myDate = new Date();
+            myDate.setTime(myDate.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = 'TermsAndConditions=Accepted; expires=' + myDate.toGMTString();
+        }
+
+        var cookie = document.cookie.split(';')
+                .map(function (x) {
+                    return x.trim().split('=');
+                })
+                .filter(function (x) {
+                    return x[0] === 'TermsAndConditions';
+                })
+                .pop();
+
+        if (cookie && cookie[1] === 'Accepted') {
+            $(".f-contact-layer").hide();
+        }
+
+        $(document).ready(function () {
+            $(' a.closeup').on('click', function () {
+                TermsAndConditions();
+                $(".f-contact-layer").addClass('meme');
+                $(".f-contact-layer").hide();
+                return false;
+            });
+        });
+    })(jQuery);
+    `;
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.src = 'https://visme.co/blog/wp-content/themes/blog/javascript/main.js';
+    script2.async = true;
+    document.body.appendChild(script2);
+
+    return () => {
+      document.body.removeChild(script1);
+      document.body.removeChild(script2);
+    };
   }, []);
 
-  const [searchVisible, setSearchVisible] = useState(false);
-
-  const toggleSearch = () => {
-    setSearchVisible(!searchVisible);
-  };
-
   return (
+    <div>
+      <Helmet>
+        <script
+          type="text/javascript"
+          src="https://visme.co/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+        ></script>
+        <script
+          src="https://visme.co/blog/wp-content/themes/blog/javascript/main.js"
+          async
+        ></script>
+      </Helmet>
     <header role="banner">
       <div className="visme-menu v-subpixel-antialiased v-relative v-z-10 v-bg-white v-menu-fixed">
         <div className="v-menu-wrapper v-items-center xl:v-flex xl:v-py-0">
           <div className="v-header v-flex v-items-center v-justify-between">
             <a className="v-menu-logo v-flex v-relative v-z-20" href="/" title="Home"  target="_self" rel="follow">
-              {/* Logo */}
+              
               <img src={logo} alt="logo" style={{maxHeight:"65px"}}></img>
 
             </a>
-
-            <div className="v-search-bar align-items-center d-flex v-hidden v-relative v-z-20">
-           
-              <div className="nav-search-bar">
-                <input type="text" className="search-input" placeholder="Search..."/>
-              </div>
-
-            </div>
-            
             <div className="v-flex v-items-center v-relative v-z-20">
               <a className="v-btn v-btn-primary v-btn-small v-relative v-z-10" href="#" rel="nofollow noopener" onclick="EWCTriggerPopup()" title="Sign Up Free">
                 Sign Up Free </a>
@@ -59,9 +96,6 @@ function Header() {
 
               </button>
             </div>
-
-            
-
           </div>
           <nav className="v-nav v-justify-between v-flex-1 xl:v-flex">
             <ul className="v-nav-list v-items-center v-list-none v-mb-0 v-p-0 v-mt-3 xl:v-flex xl:v-mt-0">
@@ -312,16 +346,16 @@ function Header() {
                       </div>
                       <div className="v-megamenu-section v-megamenu-section-secondary v-col xl:v-px-5 md:v-pt-3">
                         <div className="v-megamenu-heading v-flex v-items-center">
-                          <span className="v-megamenu-label v-chevron-before v-w-full v-flex v-items-center v-flex-1 v-py-2 lg:v-pl-2">
-                            What's New </span>
+                          {/*<span className="v-megamenu-label v-chevron-before v-w-full v-flex v-items-center v-flex-1 v-py-2 lg:v-pl-2">
+                            What's New </span>*/}
                         </div>
                         <div className="v-megamenu-wrapper v-hidden md:v-block">
                           <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-text-dark-3" href="https://www.visme.co/whats-new/" title="New Releases in Visme" data-wpel-link="internal" target="_self" rel="follow">
                             
-                            <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                           {/* <div className="v-megamenu-grid-item-thumbnail-wrapper">
                               <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/uploads/2024/05/whats-new-cover-3d-character-left-pannel-1024x576.jpg" />
-                            </div>
-                            
+                            </div>*/}
+                            {/* 
                             <div className="v-megamenu-grid-item-details v-py-3">
                               <p className="v-megamenu-grid-item-title v-mb-3 v-text-dark-2 v-subpixel-antialiased">
                                 Updates to Editing Navigation, Enhanced 3D
@@ -329,7 +363,7 @@ function Header() {
                               <p className="v-megamenu-grid-item-title v-mb-0 v-text-sky v-underline v-underline-offset-2">
                                 See more </p>
                             </div>
-                            
+                            */}
 
                           </a>
                         </div>
@@ -968,17 +1002,174 @@ function Header() {
                   </div>
                 </div>
               </li>
+              {/*<li className="v-menu-item-learn v-parent-menu-item v-mb-3 xl:v-mb-0 v-has-menu">
+                <a className="v-parent-menu-link v-link v-relative v-z-10 v-flex v-items-center v-justify-between v-text-dark-2 v-py-2 xl:v-p-0 v-chevron-before v-chevron-after" href="#" title="Learn" rel="nofollow noopener">
+                  Learn </a>
+                <div className="v-megamenu" style={{visibility: 'hidden'}}>
+                  <div className="v-megamenu-content">
+                    <div className="v-row v-large">
+                      <div className="v-megamenu-section v-megamenu-section-grid v-col v-pt-3 xl:v-pt-0 xl:v-px-5">
+                        <div className="v-megamenu-section-inner v-flex-1 v-p-3">
+                          <div className="v-megamenu-heading v-hidden md:v-flex v-items-center">
+                            <span className="v-megamenu-label v-pointer-events-none v-w-full v-flex v-items-center v-flex-1 v-py-2 xl:v-pl-2">
+                              Free educational resources </span>
+                          </div>
+                          <div className="v-megamenu-wrapper v-pt-0 xl:v-px-0">
+                            <ul className="v-megamenu-menu v-megamenu-grid-menu v-flex v-list-none v-mb-0" role="menu" tabIndex={0}>
+                              <li className="v-megamenu-grid-item md:v-mt-3">
+                                <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full" href="https://www.visme.co/videos/" title="Visme Video Tutorials" data-wpel-link="internal" target="_self" rel="follow">
+                                  <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                                    <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-learn-video-tutorials.png" />
+                                  </div>
+                                  <div className="v-megamenu-grid-item-details v-py-3">
+                                    <p className="v-megamenu-grid-item-title v-mb-0 v-text-dark-2 v-subpixel-antialiased v-megamenu-grid-item-title-large">
+                                      Visme Video Tutorials </p>
+                                    <p className="v-megamenu-grid-item-desc v-mb-0 v-mt-1 v-text-dark-3 v-subpixel-antialiased">
+                                      Watch videos on how to use Visme </p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li className="v-megamenu-grid-item md:v-mt-3">
+                                <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full" href="https://www.visme.co/best-graphic-design-books/" title="Ebooks" data-wpel-link="internal" target="_self" rel="follow">
+                                  <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                                    <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-learn-ebooks.png" />
+                                  </div>
+                                  <div className="v-megamenu-grid-item-details v-py-3">
+                                    <p className="v-megamenu-grid-item-title v-mb-0 v-text-dark-2 v-subpixel-antialiased v-megamenu-grid-item-title-large">
+                                      Ebooks </p>
+                                    <p className="v-megamenu-grid-item-desc v-mb-0 v-mt-1 v-text-dark-3 v-subpixel-antialiased">
+                                      Read in-depth knowledge for your industry
+                                    </p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li className="v-megamenu-grid-item md:v-mt-3">
+                                <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full" href="https://www.visme.co/graphic-design-tutorials/videos/" title="Graphic Design Videos" data-wpel-link="internal" target="_self" rel="follow">
+                                  <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                                    <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-learn-graphic-design.png" />
+                                  </div>
+                                  <div className="v-megamenu-grid-item-details v-py-3">
+                                    <p className="v-megamenu-grid-item-title v-mb-0 v-text-dark-2 v-subpixel-antialiased v-megamenu-grid-item-title-large">
+                                      Graphic Design Videos </p>
+                                    <p className="v-megamenu-grid-item-desc v-mb-0 v-mt-1 v-text-dark-3 v-subpixel-antialiased">
+                                      Learn design principles &amp; best practices
+                                    </p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li className="v-megamenu-grid-item md:v-mt-3">
+                                <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full" href="https://www.visme.co/webinars/" title="Live Webinars" data-wpel-link="internal" target="_self" rel="follow">
+                                  <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                                    <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-learn-webinars.png" />
+                                  </div>
+                                  <div className="v-megamenu-grid-item-details v-py-3">
+                                    <p className="v-megamenu-grid-item-title v-mb-0 v-text-dark-2 v-subpixel-antialiased v-megamenu-grid-item-title-large">
+                                      Live Webinars </p>
+                                    <p className="v-megamenu-grid-item-desc v-mb-0 v-mt-1 v-text-dark-3 v-subpixel-antialiased">
+                                      Interact with the experts live </p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li className="v-megamenu-grid-item md:v-mt-3">
+                                <a className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full" href="https://www.visme.co/certifications/memorable-visual-presentations/" title="Free Online Courses" data-wpel-link="internal" target="_self" rel="follow">
+                                  <div className="v-megamenu-grid-item-thumbnail-wrapper">
+                                    <div className="v-megamenu-grid-item-thumbnail v-thumb v-abs v-w-full v-h-full skip-lazy" data-thumb="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-learn-courses.png" />
+                                  </div>
+                                  <div className="v-megamenu-grid-item-details v-py-3">
+                                    <p className="v-megamenu-grid-item-title v-mb-0 v-text-dark-2 v-subpixel-antialiased v-megamenu-grid-item-title-large">
+                                      Free Online Courses </p>
+                                    <p className="v-megamenu-grid-item-desc v-mb-0 v-mt-1 v-text-dark-3 v-subpixel-antialiased">
+                                      Get certified with free online courses
+                                    </p>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="v-megamenu-section v-megamenu-section-secondary v-col xl:v-px-5 md:v-pt-3">
+                        <div className="v-megamenu-heading v-flex v-items-center">
+                          <span className="v-megamenu-label v-chevron-before v-w-full v-flex v-items-center v-flex-1 v-py-2 xl:v-pl-5">
+                            From our Blog </span>
+                          <a className="v-link v-morelink v-hidden xl:v-block v-flex-0-auto v-text-sm v-subpixel-antialiased" href="https://visme.co/blog/" title="See All" data-wpel-link="internal" target="_self" rel="follow">
+                            See All </a>
+                        </div>
+                        <div className="v-megamenu-wrapper v-hidden md:v-block">
+                          <ul className="v-megamenu-menu v-megamenu-menu-alt v-w-full v-list-none v-mb-0 v-p-0 md:v-flex v-flex-wrap xl:v-pl-1" role="menu" tabIndex={0}>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/mastering-presentations/" title="Presentations" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-presentations.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Presentations</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/mastering-infographics/" title="Infographics" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-infographics.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Infographics</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/mastering-the-art-of-design/" title="Design Inspiration" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-design-inspiration.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Design
+                                  Inspiration</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/video-animation/" title="Video & Animations" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-video-animations.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Video
+                                  &amp; Animations</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/business-design/" title="Design for Business" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-design-for-business.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Design
+                                  for Business</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/online-marketing-and-social-media/" title="Digital Marketing" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-digital-marketing.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Digital
+                                  Marketing</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/understanding-data-visualization/" title="Data Visualization" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-data-visualization.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Data
+                                  Visualization</span>
+                              </a>
+                            </li>
+                            <li className="v-megamenu-item v-megamenu-item-alt v-flex-0-auto">
+                              <a className="v-megamenu-item-link v-megamenu-icon-link v-w-full v-mb-3 md:v-mb-0 v-flex v-flex-0-auto" href="https://visme.co/blog/category/forms-and-surveys/" title="Forms & Surveys" data-wpel-link="internal" target="_self" rel="follow">
+                                <div className="v-icon v-icon-small v-w-7 v-h-7 xl:v-h-8 xl:v-w-8 xl:v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-blog-forms-surveys.svg" />
+                                <span className="v-leading-5 v-flex-1 v-py-1 v-mb-0 xl:v-py-1.5">Forms
+                                  &amp; Surveys</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="v-menu-item-pricing v-parent-menu-item v-mb-3 xl:v-mb-0">
+                <a className="v-parent-menu-link v-link v-relative v-z-10 v-flex v-items-center v-justify-between v-text-dark-2 v-py-2 xl:v-p-0" href="https://www.visme.co/pricing/" title="Pricing" data-wpel-link="internal" target="_self" rel="follow">
+                  Pricing </a>
+              </li>*/}
             </ul>
             <ul className="v-actions v-flex v-items-center v-list-none v-mb-0 v-z-10 v-flex-0-auto xl:v-border-none xl:v-m-0 xl:v-p-0" tabIndex={0}>
-        <li className="v-action v-action-search v-flex-1 v-flex-basis-0 v-hidden xl:v-flex-0-auto xl:v-flex">
-          <a id="search-button" className="v-link search-button" href="#" rel="nofollow noopener" title="Search" onClick={toggleSearch}>
-            <svg style={{ transform: 'translateY(2px)' }} width={24} height={24} version="1.1" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-              <path d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2 s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3 s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3 c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z" />
-            </svg>
-          </a>
-        </li>
-        {/* Other menu items */}
-        <li className="v-action v-action-login v-flex-1 v-flex-basis-0 v-flex xl:v-flex-0-auto">
+              <li className="v-action v-action-search v-flex-1 v-flex-basis-0 v-hidden xl:v-flex-0-auto xl:v-flex">
+                <a id="search-button" className="v-link search-button" href="#" rel="nofollow noopener" title="Search">
+                  <svg style={{transform: 'translateY(2px)'}} width={24} height={24} version="1.1" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><path d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z" /></svg>
+                </a>
+              </li>
+              <li className="v-action v-action-login v-flex-1 v-flex-basis-0 v-flex xl:v-flex-0-auto">
                 <a className="v-action-btn v-btn v-flex-1 v-relative v-z-10" href="https://dashboard.visme.co/login" target="_blank" rel="nofollow noopener" title="Login" data-wpel-link="internal">
                   Login </a>
               </li>
@@ -990,22 +1181,25 @@ function Header() {
                 <a className="v-action-btn v-btn v-btn-primary v-flex-1 v-relative v-z-10" href="#" rel="nofollow noopener" onclick="EWCTriggerPopup();return false" title="Sign Up Free">
                   Sign Up Free</a>
               </li>
-      </ul>
-      {searchVisible && (
-        <div className="search-bar">
-          <input type="text" className="search-input" placeholder="Search..." autoFocus="true"/>
-          <button className="close-button" onClick={toggleSearch}>
-            <svg width={24} height={24} viewBox="0 0 24 24">
-              <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95 1.414-1.414z" />
-            </svg>
-          </button>
-        </div>
-      )}
+            </ul>
           </nav>
         </div>
       </div>
 
+      <div className="search-block-container full-page">
+        <div className="search-block">
+          <i className="search-close-icon" />
+          <div className="search-input-container">
+            <form className="search-form" action="/get" method="get">
+              <input type="search" placeholder="Search" name="s" autofocus />
+            </form>
+          </div>
+          <div className="search-results row" />
+        </div>
+      </div>
+
     </header>
+    </div>
   );
 }
 
