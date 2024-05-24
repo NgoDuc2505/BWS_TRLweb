@@ -44,7 +44,7 @@ function Carousel() {
 
       <div className="carousel-container" style={{ position: 'relative', overflow: 'hidden' }}>
         <Parallax
-          translateY={[-20, 20]}
+          translateY={[-30, 20]}
           style={{ width: '100%', height: '100%' }}
         >
           <div className="bg">
@@ -59,27 +59,26 @@ function Carousel() {
             )}
             <Parallax translateY={['-50px', '50px']}>
               <h1 className="title">
-                for a good dev
+              <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=48&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+For a good dev;" />
                 <br />
                 <span>journey,</span>
                 <br />
-                call us.
               </h1>
 
               <Parallax opacity={[-1, 3]}>
                 <h2 className="links">
-                  <span>book a trip</span>
+                  <span>Lets start!</span>
                   <div>
                     <FontAwesomeIcon
                       onClick={() => {
-                        window.open('https://github.com/Yefee8');
+                        window.open('https://github.com/caongao999');
                       }}
                       icon={faGithub}
                       style={{ marginRight: '10px', color: '#FF8008' }}
                     />
                     <FontAwesomeIcon
                       onClick={() => {
-                        window.open('https://instagram.com/yefee8');
+                        window.open('https://github.com/caongao999');
                       }}
                       icon={faInstagram}
                     />

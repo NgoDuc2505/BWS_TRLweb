@@ -68,7 +68,7 @@
 
 .links>span {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 16px;
   background: #ff8008;
   background: -webkit-linear-gradient(to right, #FF8008, #8e54e9);
   background: linear-gradient(to right, #FF8008, #8e54e9);
@@ -91,7 +91,7 @@
 
   .links>span {
     font-size: 15px;
-    padding: 7.5px;
+    padding: 8px;
     border-radius: 10px;
   }
 }

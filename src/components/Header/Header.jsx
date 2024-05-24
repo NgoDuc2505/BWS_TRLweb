@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 //logo test
 import logo from './AI-logo.png';
+import Login from '../LoginForm/Login';
 
 //css của header
 import "./header.css";
@@ -67,7 +68,7 @@ function Header() {
             <ul className="v-nav-list v-items-center v-list-none v-mb-0 v-p-0 v-mt-3 xl:v-flex xl:v-mt-0">
               <li className="v-menu-item-create v-parent-menu-item v-mb-3 xl:v-mb-0 v-has-menu">
                 <a className="v-parent-menu-link v-link v-relative v-z-10 v-flex v-items-center v-justify-between v-text-dark-2 v-py-2 xl:v-p-0 v-chevron-before v-chevron-after" href="#" title="Create" rel="nofollow noopener">
-                  Create </a>
+                  Tutorial </a>
                 <div className="v-megamenu" style={{visibility: 'hidden'}}>
                   <div className="v-megamenu-content">
                     <div className="v-row v-wide">
@@ -340,7 +341,7 @@ function Header() {
               </li>
               <li className="v-menu-item-solutions v-parent-menu-item v-mb-3 xl:v-mb-0 v-has-menu">
                 <a className="v-parent-menu-link v-link v-relative v-z-10 v-flex v-items-center v-justify-between v-text-dark-2 v-py-2 xl:v-p-0 v-chevron-before v-chevron-after" href="#" title="Solutions" rel="nofollow noopener">
-                  Solutions </a>
+                Exercises </a>
                 <div className="v-megamenu" style={{visibility: 'hidden'}}>
                   <div className="v-megamenu-content">
                     <div className="v-row v-half">
@@ -979,7 +980,7 @@ function Header() {
         </li>
         {/* Other menu items */}
         <li className="v-action v-action-login v-flex-1 v-flex-basis-0 v-flex xl:v-flex-0-auto">
-                <a className="v-action-btn v-btn v-flex-1 v-relative v-z-10" href="https://dashboard.visme.co/login" target="_blank" rel="nofollow noopener" title="Login" data-wpel-link="internal">
+                <a className="v-action-btn v-btn v-flex-1 v-relative v-z-10" href="Login" target="_blank" rel="nofollow noopener" title="Login" data-wpel-link="internal">
                   Login </a>
               </li>
               <li className="v-action v-action-sales v-flex-1 v-flex-basis-0 v-flex xl:v-flex-0-auto" style={{display: 'none'}}>
