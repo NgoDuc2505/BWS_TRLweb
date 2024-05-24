@@ -1,0 +1,33 @@
+
+.background-radial-gradient {
+    background: radial-gradient(circle, #1c1c1c, #000000);
+  }
+  
+  #radius-shape-1,
+  #radius-shape-2 {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #radius-shape-1 {
+    width: 200px;
+    height: 200px;
+    background-color: #ff4c4c;
+    top: -60px;
+    left: -60px;
+  }
+  
+  #radius-shape-2 {
+    width: 300px;
+    height: 300px;
+    background-color: #4cff72;
+    bottom: -120px;
+    right: -120px;
+  }
+  .col-md-6 {
+    position: relative;
+    z-index: 1;
+  }
+  

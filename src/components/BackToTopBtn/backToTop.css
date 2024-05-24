@@ -1,0 +1,9 @@
+.btn_back_to_top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 8px;
+    overflow: hidden;
+    outline: none;
+}
