@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 
 function DetailCourse() {
   const param = useParams();
+  console.log(param);
   const { Title, Paragraph, Text, Link } = Typography;
   const blockContent = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit architecto quaerat, consequuntur inventore quo accusamus. Eius sunt molestiae ducimus perspiciatis molestias dolore blanditiis corrupti non repellendus? Earum, sed sint hic assumenda reiciendis incidunt deleniti recusandae, dolore, veniam minus natus.`;
   return (
