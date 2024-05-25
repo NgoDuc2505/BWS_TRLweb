@@ -17,7 +17,6 @@ function Login() {
       <MDBRow>
         <MDBCol md='6' className='position-relative'>
           <div id="radius-shape-1" className="position-fixed rounded-circle shadow-5-strong" style={{ backgroundColor: '#FF4C4C', width: '200px', height: '200px', top: '-60px', left: '-60px' }}></div>
-          <div id="radius-shape-2" className="position-fixed shadow-5-strong" style={{ backgroundColor: '#4CFF72', width: '300px', height: '300px', bottom: '-120px', right: '-120px' }}></div>
 
           <MDBCard className='my-5 bg-glass' style={{ borderRadius: '20px' }}>
             <MDBCardBody className='p-5'>

@@ -27,7 +27,6 @@ function RegisterForm() {
           </div>
           <div className="col-md-6 position-relative">
             <div id="radius-shape-1" />
-            <div id="radius-shape-2" />
             <div className="card my-5 bg-glass" style={{ borderRadius: 20 }}>
               <div className="card-body p-5">
                 <div className="row">
