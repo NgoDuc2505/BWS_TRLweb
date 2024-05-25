@@ -11,30 +11,6 @@ function RegisterForm() {
               className="col-md-6 text-center text-md-start d-flex flex-column justify-content-center"
               style={{ zIndex: 2 }}
             >
-<<<<<<< HEAD
-              The best offer <br />
-              <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                for your business
-              </span>
-            </h1>
-            <p className="px-3" style={{ color: "hsl(218, 81%, 85%)" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              itaque accusantium odio, soluta, corrupti aliquam quibusdam
-              tempora at cupiditate quis eum maiores libero veritatis? Dicta
-              facilis sint aliquid ipsum atque?
-            </p>
-          </div>
-          <div className="col-md-6 position-relative">
-            <div id="radius-shape-1" />
-            <div className="card my-5 bg-glass" style={{ borderRadius: 20 }}>
-              <div className="card-body p-5">
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <label htmlFor="form1" className="form-label">
-                      First name
-                    </label>
-                    <input type="text" className="form-control" id="form1" />
-=======
               <h1
                 className="my-5 display-3 fw-bold ls-tight px-3"
                 style={{ color: "hsl(218, 81%, 95%)" }}
@@ -69,7 +45,6 @@ function RegisterForm() {
                       </label>
                       <input type="text" className="form-control" id="form2" />
                     </div>
->>>>>>> 27e2b772d955673391783b91264544da442b0413
                   </div>
                   <div className="mb-4">
                     <label htmlFor="form3" className="form-label">

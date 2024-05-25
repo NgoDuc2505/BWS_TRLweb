@@ -14,12 +14,6 @@ import Footer from "../Footer/Footer";
 
 function Login() {
   return (
-<<<<<<< HEAD
-    <MDBContainer fluid className='p-4 background-radial-gradient overflow-auto'>
-      <MDBRow>
-        <MDBCol md='6' className='position-relative'>
-          <div id="radius-shape-1" className="position-fixed rounded-circle shadow-5-strong" style={{ backgroundColor: '#FF4C4C', width: '200px', height: '200px', top: '-60px', left: '-60px' }}></div>
-=======
     <>
       <MDBContainer
         fluid
@@ -49,7 +43,6 @@ function Login() {
                 right: "-120px",
               }}
             ></div>
->>>>>>> 27e2b772d955673391783b91264544da442b0413
 
             <MDBCard className="my-5 bg-glass" style={{ borderRadius: "20px" }}>
               <MDBCardBody className="p-5">
