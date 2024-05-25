@@ -6,6 +6,7 @@ import HomePart from "../pages/HomePage/HomePart";
 import DetailContent from "../components/DetailContent/DetailContent";
 import Login from "../components/LoginForm/Login";
 import RegisterForm from "../components/Register/RegisterForm";
+import LoginConverted from "../components/LoginForm/LoginConverted";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <LoginConverted></LoginConverted>
       },
       {
         path: "/register",
