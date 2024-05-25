@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 //logo test
 import logo from './AI-logo.png';
-import Login from '../LoginForm/Login';
+import Login from '../LoginForm/LoginConverted';
+import Register from '../Register/RegisterForm';
 
 //css của header
 import "./header.css";
@@ -86,7 +87,7 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/" title="Presentations" target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-presentations.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Presentations</strong></p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Web building</strong></p>
                                     <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Attract your listeners</p>
                                   </div>
                                 </a>
@@ -95,7 +96,7 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-documents.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Documents</strong></p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Mobile Building</strong></p>
                                     <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Visual
                                       docs that inform</p>
                                   </div>
@@ -105,9 +106,8 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-charts-graphs.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Charts
-                                        &amp; Graphs</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Bring
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Data Analytics</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">
                                       your data to life</p>
                                   </div>
                                 </a>
@@ -116,7 +116,7 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-infographics.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Reports</strong></p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Backend</strong></p>
                                     <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Share
                                       information visually</p>
                                   </div>
@@ -126,8 +126,7 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-forms-surveys.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Forms
-                                        &amp; Surveys</strong></p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Game Building</strong></p>
                                     <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Smart data collection</p>
                                   </div>
                                 </a>
@@ -136,7 +135,7 @@ function Header() {
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
                                   <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-whiteboards.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Whiteboards</strong></p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Graphic Design</strong></p>
                                     <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Draw your idea</p>
                                   </div>
                                 </a>
@@ -153,57 +152,80 @@ function Header() {
                           {/**Index col 1 */}
                           <div className="v-col xl:v-px-3">
                             <div className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0 xl:v-cursor-default">
-                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">Popular tools</span>
+                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">Popular Tutorials</span>
                             </div>
                             <ul className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0" role="menu" tabIndex={0}>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Documents Convert Tool</a>
+                                  HTML/CSS</a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Presentation Maker</a>
+                                  JavaScript</a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Chart Maker</a>
+                                  Java</a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Document Creator </a>
+                                  Kotlin</a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Flowchart Maker </a>
+                                  C++ </a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Report Maker </a>
+                                  Flutter </a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/"  target="_self" rel="follow">
-                                  White Paper Design </a>
+                                  NodeJs </a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/"  target="_self" rel="follow">
-                                  Animation &amp; Assets </a>
+                                  Python </a>
                               </li>
                             </ul>
                           </div>
 
-                          {/**Index col 2 */}
+                          <div className="v-col xl:v-px-3">
+                            <div className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0 xl:v-cursor-default">
+                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">IDE Guide</span>
+                            </div>
+                            <ul className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0" role="menu" tabIndex={0}>
+                              <li className="v-megamenu-tab-item v-mt-3">
+                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
+                                  Visual Studio Code</a>
+                              </li>
+                              <li className="v-megamenu-tab-item v-mt-3">
+                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
+                                  IntelliJ </a>
+                              </li>
+                              <li className="v-megamenu-tab-item v-mt-3">
+                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
+                                Xcode </a>
+                              </li>
+                              <li className="v-megamenu-tab-item v-mt-3">
+                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
+                                Android Studio </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {/**Index col 3 */}
                           <div className="v-col xl:v-px-3">
                             <a className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0" href="/" title="AI Tool"  target="_self" rel="follow">
-                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">AI Tools</span>
+                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">Tools</span>
                             </a>
                             <ul className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0" role="menu" tabIndex={0}>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  AI Image Generator</a>
+                                  Github/Gitlab</a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  AI Presentation Maker </a>
+                                  AI code Generate </a>
                               </li>
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
@@ -217,29 +239,8 @@ function Header() {
                           </div>
 
                           {/**Index col 3 */}
-                          <div className="v-col xl:v-px-3">
-                            <div className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0 xl:v-cursor-default">
-                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">Asset Resources</span>
-                            </div>
-                            <ul className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0" role="menu" tabIndex={0}>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  SVG Icons</a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Template Photo </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  Sample People Video </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a className="v-megamenu-tab-link v-block v-relative v-text-dark-3" href="/" target="_self" rel="follow">
-                                  GIF </a>
-                              </li>
-                            </ul>
-                          </div>
+                          {/**Index col 2 */}
+                          
                         </div>
                       </div>
 
@@ -258,7 +259,7 @@ function Header() {
                             
                             <div className="v-megamenu-grid-item-details v-py-3">
                               <p className="v-megamenu-grid-item-title v-mb-3 v-text-dark-2 v-subpixel-antialiased">
-                                Updates new Template , Sample and courses </p>
+                              "Upgrade your account to use direct code features." </p>
                               <p className="v-megamenu-grid-item-title v-mb-0 v-text-sky v-underline v-underline-offset-2">
                                 See more </p>
                             </div>
@@ -739,7 +740,7 @@ function Header() {
                   Request a Demo </a>
               </li>
               <li className="v-action v-action-signup v-flex-full v-flex v-mt-4 sm:v-hidden xl:v-mt-0 xl:v-flex-0-auto xl:v-inline-block xl:v-flex-auto">
-                <a className="v-action-btn v-btn v-btn-primary v-flex-1 v-relative v-z-10" href="#" rel="nofollow noopener" onclick="EWCTriggerPopup();return false" title="Sign Up Free">
+                <a className="v-action-btn v-btn v-btn-primary v-flex-1 v-relative v-z-10" href="Register" rel="nofollow noopener" onclick="EWCTriggerPopup();return false" title="Sign Up Free">
                   Sign Up Free</a>
               </li>
       </ul>
