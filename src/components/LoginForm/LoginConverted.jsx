@@ -123,19 +123,16 @@ function LoginConverted() {
             </div>
             <div className="col-md-6 text-center text-md-start d-flex flex-column justify-content-center">
               <h1
-                className="my-5 display-3 fw-bold ls-tight px-3"
+                className="my-3 display-3 fw-bold ls-tight px-3"
                 style={{ color: "hsl(218, 81%, 95%)" }}
               >
-                The best offer <br />
-                <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                  for your business
+                Login to our web <br />
+                <span style={{ color: "hsl(218, 81%, 75%)", fontSize:"2rem" }}>
+                  Many discounts are waiting for you !
                 </span>
               </h1>
               <p className="px-3" style={{ color: "hsl(218, 81%, 85%)" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-                quibusdam tempora at cupiditate quis eum maiores libero
-                veritatis? Dicta facilis sint aliquid ipsum atque?
+              Take a cup of coffee, a cup of tea, or anything make you feel concentrate, turn the music on, open your note, and ready for a new adventure with us!
               </p>
             </div>
           </div>

@@ -47,19 +47,16 @@ function RegisterForm() {
               style={{ zIndex: 2 }}
             >
               <h1
-                className="my-5 display-3 fw-bold ls-tight px-3"
+                className="my-3 display-3 fw-bold ls-tight px-3"
                 style={{ color: "hsl(218, 81%, 95%)" }}
               >
-                The best offer <br />
-                <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                  for your business
+                Welcome to IT-Nexus <br />
+                <span style={{ color: "hsl(218, 81%, 75%)", fontSize : "1.2rem" }}>
+                Welcome aboard! Get ready to dive into a world of new opportunities
                 </span>
               </h1>
               <p className="px-3" style={{ color: "hsl(218, 81%, 85%)" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-                quibusdam tempora at cupiditate quis eum maiores libero
-                veritatis? Dicta facilis sint aliquid ipsum atque?
+              We are thrilled to have you join us. Here, you'll find endless opportunities to explore, connect, and grow. Whether you're here to learn something new, find inspiration, or simply enjoy your time, we're committed to making your experience exceptional. Thank you for choosing to be a part of our journey. Let's embark on this exciting adventure together!
               </p>
             </div>
             <div className="col-md-6 position-relative">
@@ -207,6 +204,13 @@ function RegisterForm() {
         </div>
       </div>
       <Footer></Footer>
+      <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
     </form>
   );
 }
