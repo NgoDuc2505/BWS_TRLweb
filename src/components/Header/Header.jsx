@@ -303,7 +303,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://www.codecademy.com/catalog/language/html-css"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -313,7 +313,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -323,7 +323,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://docs.oracle.com/javase/tutorial/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -333,7 +333,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://kotlinlang.org/docs/getting-started.html"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -343,7 +343,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://cplusplus.com/doc/tutorial/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -353,7 +353,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://docs.flutter.dev/get-started/codelab"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -363,7 +363,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -373,7 +373,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://docs.python.org/3/tutorial/index.html"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -397,7 +397,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://code.visualstudio.com/docs/introvideos/basics/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -407,7 +407,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://www.jetbrains.com/guide/java/tutorials//"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -417,7 +417,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://codewithchris.com/xcode-tutorial//"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -427,7 +427,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?hl=vi#0"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -457,7 +457,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://about.gitlab.com//"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -467,7 +467,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://www.blackbox.ai/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -477,7 +477,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="https://chatdoc.com/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -487,7 +487,7 @@ function Header() {
                               <li className="v-megamenu-tab-item v-mt-3">
                                 <a
                                   className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
+                                  href="AI PDF Analysis"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -686,145 +686,17 @@ function Header() {
                           </div>
                         </div>
                       </div>
-
+                      {/**Uses case */}
+                      
                       <div className="v-megamenu-section v-megamenu-section-middle v-col xl:v-pl-0 xl:v-pr-4">
                         <div className="v-megamenu-wrapper v-relative v-overflow-hidden">
-                          <div className="v-col xl:v-px-4">
-                            <div className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0 xl:v-cursor-default">
-                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">
-                                Fields
-                              </span>
-                            </div>
-                            <ul
-                              className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0"
-                              role="menu"
-                              tabIndex={0}
-                            >
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Marketing &amp; Media{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Technology{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Manager{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Healthcare{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Consumer Goods{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Public Sector{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="v-col xl:v-px-4">
-                            <div className="v-megamenu-tab v-chevron-before v-chevron-after v-mb-3 v-flex v-items-center v-flex-0-auto md:v-mb-0 md:v-pl-0 xl:v-cursor-default">
-                              <span className="v-subpixel-antialiased v-flex-1 v-py-2">
-                                Position
-                              </span>
-                            </div>
-                            <ul
-                              className="v-megamenu-tab-menu v-hidden v-list-none v-mb-0 md:v-flex md:v-pt-0"
-                              role="menu"
-                              tabIndex={0}
-                            >
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Product &amp; Project Manager{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Training &amp; Development{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  Data &amp; Analytics{" "}
-                                </a>
-                              </li>
-                              <li className="v-megamenu-tab-item v-mt-3">
-                                <a
-                                  className="v-megamenu-tab-link v-block v-relative v-text-dark-3"
-                                  href="/"
-                                  target="_self"
-                                  rel="follow"
-                                >
-                                  AI Engineer{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="v-megamenu-section v-megamenu-section-secondary v-col xl:v-px-5 md:v-pt-3">
+                          <div className="v-megamenu-section v-megamenu-section-secondary v-col xl:v-px-5 md:v-pt-3">
                         <div className="v-megamenu-heading v-flex v-items-center">
                           <span className="v-megamenu-label v-chevron-before v-w-full v-flex v-items-center v-flex-1 v-py-2 lg:v-pl-2">
                             Use cases{" "}
                           </span>
                         </div>
+
                         <div className="v-megamenu-wrapper v-hidden md:v-block">
                           <ul
                             className="v-megamenu-menu v-megamenu-menu-alt v-w-full v-list-none v-mb-0 v-p-0 md:v-flex v-flex-wrap"
@@ -1026,6 +898,11 @@ function Header() {
                           </ul>
                         </div>
                       </div>
+                        </div>
+                      </div>
+
+                      
+
                     </div>
                   </div>
                 </div>
@@ -1068,7 +945,7 @@ function Header() {
                               <li className="v-megamenu-item md:v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.w3schools.com/tutorials/index.php"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1090,10 +967,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.w3schools.com/references/index.php"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1114,10 +992,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.w3schools.com/spaces/index.php"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1138,10 +1017,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.w3schools.com/quiztest/default.asp"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1162,10 +1042,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://campus.w3schools.com/collections/certifications"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1185,10 +1066,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.pathfinderslearning.com/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1210,10 +1092,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="/membership/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1234,10 +1117,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://getbootstrap.com/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1258,10 +1142,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.linkedin.com/jobs/it-jobs/"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1282,10 +1167,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.codecademy.com/resources/videos"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1306,10 +1192,11 @@ function Header() {
                                   </div>
                                 </a>
                               </li>
+
                               <li className="v-megamenu-item v-mt-2">
                                 <a
                                   className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm"
-                                  href="/"
+                                  href="https://www.w3schools.com/pathfinder/pathfinder_goals.php"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1376,7 +1263,7 @@ function Header() {
                               <li className="v-megamenu-grid-item md:v-mt-3">
                                 <a
                                   className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full"
-                                  href="/"
+                                  href="https://www.youtube.com/watch?v=-SAe0KBPJ3k"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1397,7 +1284,7 @@ function Header() {
                               <li className="v-megamenu-grid-item md:v-mt-3">
                                 <a
                                   className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full"
-                                  href="/"
+                                  href="https://www.youtube.com/watch?v=hIc_9Wbn704"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1418,7 +1305,7 @@ function Header() {
                               <li className="v-megamenu-grid-item md:v-mt-3">
                                 <a
                                   className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full"
-                                  href="/"
+                                  href="https://www.youtube.com/watch?v=mJ3bGvy0WAY"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1438,7 +1325,7 @@ function Header() {
                               <li className="v-megamenu-grid-item md:v-mt-3">
                                 <a
                                   className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full"
-                                  href="/"
+                                  href="https://www.youtube.com/watch?v=0jSY9BEyQ7A"
                                   target="_self"
                                   rel="follow"
                                 >
@@ -1458,7 +1345,7 @@ function Header() {
                               <li className="v-megamenu-grid-item md:v-mt-3">
                                 <a
                                   className="v-megamenu-grid-item-link v-block v-relative v-overflow-hidden v-h-full"
-                                  href="/"
+                                  href="https://www.youtube.com/watch?v=P2H-OOMmfcY"
                                   target="_self"
                                   rel="follow"
                                 >
