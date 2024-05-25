@@ -4,6 +4,8 @@ import { PlusOutlined } from "@ant-design/icons";
 import { Menu, Flex, Breadcrumb, Skeleton, Spin } from "antd";
 import { Outlet } from "react-router";
 import { useSelector } from "react-redux";
+import { setCurrentCourse } from "../../Redux/courseSlice";
+import { getDebounce } from "../../handler/Global_Handler/useDebounce";
 
 const navLocation = [
   {
@@ -34,21 +36,26 @@ const navLocation = [
 
 function DetailContent() {
   const [crCourse, setCourse] = useState(undefined);
-  
+  const [isPulled, setIsPulled] = useState(false);
   const handleGetContent = (e) => {
     console.log(e.keyPath);
+    const { DETAIL } = course;
+    const tabGetter = e.keyPath[0].split("/")[1];
+    const subTabGetter = e.keyPath[0].split("/")[0];
+    console.log(DETAIL[tabGetter][subTabGetter]);
   };
   const { course } = useSelector((state) => {
     return state.course;
   });
   useEffect(() => {
+    console.log("re-setstate");
     setCourse(course);
+    setIsPulled(true);
+    
   }, [course]);
-  console.log(crCourse);
-  const courseId = crCourse ? crCourse.id : "main1"; 
   const items = [
     {
-      key: courseId,
+      key: "courseID",
       label: "Basic",
       icon: <PlusOutlined />,
       children: [
@@ -58,15 +65,15 @@ function DetailContent() {
           type: "group",
           children: [
             {
-              key: "needed",
+              key: "needed/INTRODUCE",
               label: "Why we need ?",
             },
             {
-              key: "history",
+              key: "history/INTRODUCE",
               label: "History",
             },
             {
-              key: "bestPractise",
+              key: "bestPractise/INTRODUCE",
               label: "Best Practice",
             },
           ],
@@ -77,15 +84,15 @@ function DetailContent() {
           type: "group",
           children: [
             {
-              key: "definition",
+              key: "definition/FUNDAMENTAL",
               label: "Definition",
             },
             {
-              key: "firstLook",
+              key: "firstLook/FUNDAMENTAL",
               label: "First Look",
             },
             {
-              key: "roadmap",
+              key: "roadmap/FUNDAMENTAL",
               label: "Road Map",
             },
           ],
@@ -98,15 +105,15 @@ function DetailContent() {
       icon: <PlusOutlined />,
       children: [
         {
-          key: "beginProp",
+          key: "beginProp/CORECONCEPT",
           label: "Beginner",
         },
         {
-          key: "middle",
+          key: "middle/CORECONCEPT",
           label: "Middle Level",
         },
         {
-          key: "advance",
+          key: "advance/CORECONCEPT",
           label: "Advance",
         },
       ],
@@ -153,18 +160,17 @@ function DetailContent() {
       ],
     },
   ];
-  const isDataPulled = crCourse ? true : false;
   return (
     <div>
       <Flex vertical={false}>
-        {isDataPulled ? (
+        {isPulled ? (
           <Menu
             onClick={handleGetContent}
             style={{
               width: "25%",
             }}
-            defaultSelectedKeys={["1"]}
-            defaultOpenKeys={[`${courseId}`]}
+            defaultSelectedKeys={["needed/INTRODUCE"]}
+            defaultOpenKeys={[`courseID`]}
             mode="inline"
             items={items}
           />

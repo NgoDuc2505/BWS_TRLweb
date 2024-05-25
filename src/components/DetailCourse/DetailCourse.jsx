@@ -5,13 +5,12 @@ import {
   Flex,
   Image,
   Row,
-  Skeleton,
   Spin,
   Statistic,
   Typography,
 } from "antd";
 import Index from "../Error_IMG_display/Index";
-import { useParams } from "react-router";
+import { useLocation, useParams } from "react-router";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,11 +18,13 @@ import { setCurrentCourse } from "../../Redux/courseSlice";
 import handleNavigateAPI from "../../handler/Global_Handler/navigateAPIRoute";
 
 function DetailCourse() {
-  const param = useParams();
+  const { idCourse } = useParams();
+  const location = useLocation();
   const { course } = useSelector((state) => {
     return state.course;
   });
   const [isPulledData, setPull] = useState(false);
+  const [imgCourse, setImg] = useState("https://imagekit.io/blog/content/images/2020/12/image-resizing-html.jpg");
   const dispatch = useDispatch();
   const { Title, Paragraph, Text, Link } = Typography;
   const blockContent = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit architecto quaerat, consequuntur inventore quo accusamus. Eius sunt molestiae ducimus perspiciatis molestias dolore blanditiis corrupti non repellendus? Earum, sed sint hic assumenda reiciendis incidunt deleniti recusandae, dolore, veniam minus natus.`;
@@ -31,7 +32,7 @@ function DetailCourse() {
     const getData = async () => {
       const data = await axios({
         method: "get",
-        url: handleNavigateAPI("/course/cdetail/html"),
+        url: handleNavigateAPI(`/course/cdetail/${idCourse}`),
       });
       if (data) {
         const rs = data.data.content;
@@ -40,12 +41,16 @@ function DetailCourse() {
       }
     };
     getData();
-  }, []);
+  }, [location.pathname]);
+  useEffect(()=>{
+    setImg(course?.img)
+  },[course])
+  console.log(course);
   return (
     <Spin spinning={!isPulledData}>
       <div className="detail_course">
         <Flex vertical={false} justify="space-between">
-          <Title className="mt-2">Introduction</Title>
+          <Title className="mt-2">{`Introduction ${course?.nameCourse}`}</Title>
           <Row gutter={16} style={{ width: "20%" }}>
             <Col span={12}>
               <Statistic
@@ -63,7 +68,7 @@ function DetailCourse() {
           <Image
             width={"60%"}
             className="mb-4"
-            src="https://imagekit.io/blog/content/images/2020/12/image-resizing-html.jpg"
+            src={imgCourse}
             fallback={<Index />}
           />
           <Typography>

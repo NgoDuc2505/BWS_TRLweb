@@ -57,13 +57,13 @@ const extraData = [
     describe: "This language is awesome to start...",
   },
   {
-    id: "24",
+    id: "css",
     imgUrl: "img/java.png",
     title: "Java",
     describe: "Make your style in HTML...",
   },
   {
-    id: "34",
+    id: "js",
     imgUrl: "img/c2.png",
     title: "C",
     describe: "Powerful language of website...",
