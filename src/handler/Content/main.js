@@ -52,18 +52,36 @@ const data = [
 const extraData = [
   {
     id: "html",
+    imgUrl: "img/html.png",
+    title: "HTML",
+    describe: "This language is awesome to start...",
+  },
+  {
+    id: "css",
+    imgUrl: "img/css3.jpg",
+    title: "CSS",
+    describe: "Make your style in HTML...",
+  },
+  {
+    id: "js",
+    imgUrl: "img/jss.PNG",
+    title: "Javascript",
+    describe: "Powerful language of website...",
+  },
+  {
+    id: "cpp",
     imgUrl: "img/cplus.png",
     title: "C++",
     describe: "This language is awesome to start...",
   },
   {
-    id: "css",
+    id: "java",
     imgUrl: "img/java.png",
     title: "Java",
     describe: "Make your style in HTML...",
   },
   {
-    id: "js",
+    id: "c",
     imgUrl: "img/c2.png",
     title: "C",
     describe: "Powerful language of website...",
@@ -76,9 +94,9 @@ const extraData = [
   },
 ];
 
-const widthMappingExtraData = ["65%", "65%", "30%", "43%"];
-const leftMappingExtraData = ["30%", "30%", "50%", "44%"];
-const bgcMappingExtraData = ["#00599c", "#ffa838a8", "#00599c", "#f7f7f7"];
+const widthMappingExtraData = ["65%", "65%", "30%","65%", "65%", "30%", "43%"];
+const leftMappingExtraData = ["30%", "30%", "50%","30%", "30%", "50%", "44%"];
+const bgcMappingExtraData = ["#b32d0b", "#71c9e1", "#f7df1e","#00599c", "#ffa838a8", "#00599c", "#f7f7f7"];
 const colorMappingExtraData = [true, true, true, false];
 
 export {
