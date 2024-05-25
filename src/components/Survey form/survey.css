@@ -1,0 +1,15 @@
+.survey .btn_survey{
+    position: fixed;
+    bottom: 110px;
+    right: 50px;
+    z-index: 5;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 8px;
+    overflow: hidden;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

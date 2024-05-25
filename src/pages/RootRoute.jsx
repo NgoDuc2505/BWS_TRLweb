@@ -6,6 +6,7 @@ import { Outlet, useLocation } from "react-router";
 import { scrollToTp } from "../handler/Global_Handler/scrollToTop";
 import BackToTopBtn from "../components/BackToTopBtn/BackToTopBtn";
 import "./root.css";
+import SurveyForm from "../components/Survey form/SurveyForm";
 function RootRoute() {
   const location = useLocation();
   const [scrollY, setScrollY] = useState(false);
@@ -24,7 +25,8 @@ function RootRoute() {
   return (
     <div className="main_wrapper">
       <Header></Header>
-      <SubHead></SubHead>
+      {/* <SubHead></SubHead> */}
+      <SurveyForm isDisplay={scrollY}></SurveyForm>
       <Suspense>
         <Outlet></Outlet>
       </Suspense>
