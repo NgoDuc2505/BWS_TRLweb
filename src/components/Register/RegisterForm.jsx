@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Footer from "../Footer/Footer";
 import "./register.css";
-
+import swal from "sweetalert";
 function RegisterForm() {
   const formik = useFormik({
     initialValues: {
@@ -30,8 +30,11 @@ function RegisterForm() {
         "Passwords must match"
       ),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values, { resetForm }) => {
+      // alert(JSON.stringify(values, null, 2));
+      console.log(values);
+      swal("Done!", "You have been registered!", "success");
+      resetForm();
     },
   });
   return (
@@ -61,8 +64,7 @@ function RegisterForm() {
             </div>
             <div className="col-md-6 position-relative">
               <div id="radius-shape-1" />
-              <div id="radius-shape-2" />
-              <div className="card my-5 bg-glass" style={{ borderRadius: 20 }}>
+              <div className="card bg-glass" style={{ borderRadius: 20, marginTop:"5rem" }}>
                 <div className="card-body p-5">
                   <div className="row">
                     <div className="col-md-6 mb-4">
@@ -160,7 +162,11 @@ function RegisterForm() {
                       </label>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary w-100 mb-4" size="md">
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-100 mb-4"
+                    size="md"
+                  >
                     Sign up
                   </button>
                   <div className="text-center">

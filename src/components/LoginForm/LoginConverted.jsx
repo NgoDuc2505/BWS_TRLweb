@@ -1,23 +1,56 @@
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import Footer from "../Footer/Footer";
 import "./loginConverted.css";
+import swal from "sweetalert";
 
 function LoginConverted() {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Required your email !"),
+      password: Yup.string()
+        .required("Password can not be empty !")
+        .max(8, "Max password character is 8"),
+    }),
+    onSubmit: (values, { resetForm }) => {
+      // alert(JSON.stringify(values, null, 2));
+      console.log(values);
+      swal("Done!", "You have been login!", "success");
+      resetForm();
+    },
+  });
   return (
-    <>
+    <form onSubmit={formik.handleSubmit}>
       <div className="background-radial-gradient overflow-auto">
         <div className="container-fluid p-4">
           <div className="row">
             <div className="col-md-6 position-relative  ">
               <div id="radius-shape-1" />
-              <div id="radius-shape-2" />
-              <div className="card my-5 bg-glass" style={{ borderRadius: 20 }}>
+              <div
+                className="card bg-glass"
+                style={{ borderRadius: 20, marginTop: "5rem" }}
+              >
                 <div className="card-body p-5">
                   <div className="row">
                     <div className="col-md mb-4">
                       <label htmlFor="form1" className="form-label">
-                        Username:
+                        Email:
                       </label>
-                      <input type="text" className="form-control" id="form1" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="form1"
+                        {...formik.getFieldProps("email")}
+                      />
+                      {formik.touched.email && formik.errors.email ? (
+                        <div className="text-danger">{formik.errors.email}</div>
+                      ) : null}
                     </div>
                   </div>
                   <div className="mb-4">
@@ -28,17 +61,15 @@ function LoginConverted() {
                       type="password"
                       className="form-control"
                       id="form4"
+                      {...formik.getFieldProps("password")}
                     />
+                    {formik.touched.password && formik.errors.password ? (
+                      <div className="text-danger">
+                        {formik.errors.password}
+                      </div>
+                    ) : null}
                   </div>
                   <div className="d-flex justify-content-center mb-4">
-                    {/*
-                                                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
-                              Subscribe to our newsletter
-                          </label>
-                      </div>
-                      */}
                     <div>
                       <p>
                         Dont have account?
@@ -49,7 +80,11 @@ function LoginConverted() {
                       </p>
                     </div>
                   </div>
-                  <button className="btn btn-primary w-100 mb-4" size="md">
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-100 mb-4"
+                    size="md"
+                  >
                     login
                   </button>
                   <div className="text-center">
@@ -114,7 +149,7 @@ function LoginConverted() {
         />
       </div>
       <Footer></Footer>
-    </>
+    </form>
   );
 }
 
