@@ -5,24 +5,24 @@ import Footer from "../components/Footer/Footer";
 import { Outlet, useLocation } from "react-router";
 import { scrollToTp } from "../handler/Global_Handler/scrollToTop";
 import BackToTopBtn from "../components/BackToTopBtn/BackToTopBtn";
-
+import "./root.css";
 function RootRoute() {
   const location = useLocation();
-  const [scrollY,setScrollY] = useState(false);
+  const [scrollY, setScrollY] = useState(false);
   useEffect(() => {
     scrollToTp();
   }, [location.pathname]);
   const onScrollDetect = () => {
     const scrlY = window.scrollY;
-    if(scrlY >= 500 && !scrollY){
+    if (scrlY >= 500 && !scrollY) {
       setScrollY(true);
-    }else if(scrlY < 500 && scrlY){
+    } else if (scrlY < 500 && scrlY) {
       setScrollY(false);
     }
   };
   window.onscroll = onScrollDetect;
   return (
-    <div>
+    <div className="main_wrapper">
       <Header></Header>
       <SubHead></SubHead>
       <Suspense>

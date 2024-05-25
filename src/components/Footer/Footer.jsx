@@ -1,8 +1,8 @@
-
 import "animate.css";
+import "./footer.css";
 function Footer() {
   return (
-    <footer className="bg-dark text-white pt-5 pb-4 wow animate__animated animate__fadeIn">
+    <footer className="footer_cs bg-dark text-white pt-5 pb-4 wow animate__animated animate__fadeIn">
       <div className="container text-center text-md-left">
         {/*Đây là một chỗ*/}
         <div className="row text-center text-md-left">
