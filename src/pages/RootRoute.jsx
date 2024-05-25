@@ -28,7 +28,6 @@ function RootRoute() {
       <Suspense>
         <Outlet></Outlet>
       </Suspense>
-      <Footer></Footer>
       <BackToTopBtn isDisplay={scrollY}></BackToTopBtn>
     </div>
   );
