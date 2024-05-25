@@ -1,4 +1,5 @@
 import React from "react";
+import swal from '@sweetalert/with-react'
 import {
   MDBBtn,
   MDBCard,
@@ -13,6 +14,16 @@ import {
 } from "mdb-react-ui-kit";
 
 export default function SurveyForm() {
+  const clickOk = () => {
+    swal(
+      <div>
+        <h1>Hello world!</h1>
+        <p>
+          This is now rendered with JSX!
+        </p>
+      </div>
+    )
+  }
   return (
     <MDBContainer>
       <MDBRow className="justify-content-center">
@@ -75,7 +86,7 @@ export default function SurveyForm() {
             </MDBCardBody>
             <MDBCardFooter>
               <div className="text-end">
-                <MDBBtn>Submit</MDBBtn>
+                <MDBBtn onClick={clickOk}>Submit</MDBBtn>
               </div>
             </MDBCardFooter>
           </MDBCard>
