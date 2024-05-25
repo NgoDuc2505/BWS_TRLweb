@@ -7,9 +7,6 @@ import './subhead.css';
 function SubHead() {
   return (
     <Container col4>
-      <Row>
-        <Col className='title-subhead'> Hãy nâng lên bản pro nào!</Col>
-      </Row>
     </Container>
   );
 }
