@@ -22,7 +22,7 @@ function Footer() {
           <div className="col-sm-2 col-lg-2  mx-auto mt-3">
             {/* chinh day ne*/}
             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-              Products
+              Tutorial
             </h5>
             <p>
               <a
@@ -30,7 +30,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                HTML Bootstrap 5
+                Web Building
               </a>
             </p>
             <p>
@@ -39,7 +39,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                CSS Introduction
+                Mobile Building
               </a>
             </p>
             <p>
@@ -48,7 +48,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                JavaScript Examples
+                Data Analytics
               </a>
             </p>
             <p>
@@ -57,7 +57,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                C++ for beginner
+                Bankend
               </a>
             </p>
           </div>
@@ -65,7 +65,7 @@ function Footer() {
             {" "}
             {/* chinh day ne*/}
             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-              Useful Example
+            Popular Courses 
             </h5>
             <p>
               <a
@@ -73,7 +73,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                HTML Examples
+                HTML/CSS
               </a>
             </p>
             <p>
@@ -82,7 +82,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                CSS Examples
+                JavaScript
               </a>
             </p>
             <p>
@@ -91,7 +91,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                JavaScript Examples
+                Java
               </a>
             </p>
             <p>
@@ -100,7 +100,7 @@ function Footer() {
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
-                C++ Examples
+                C++
               </a>
             </p>
           </div>
@@ -110,23 +110,10 @@ function Footer() {
             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
               Contact
             </h5>
-            {/*
-              <p>
-              <i class="fa-solid fa-house mr-3"></i> Viet Nam,Da Nang,VKU
-          </p>
-          <p>
-              <i class="fa-solid fa-envelope mr-3"></i> quandeptry@gmail.com
-          </p>
-          <p>
-              <i class="fa-solid fa-phone mr-3"></i> 0123456789
-          </p>
-          <p>
-              <i class="fa-solid fa-print mr-3"></i> +83 456789
-          </p>
-          */}
-            <p>Viet Nam,Da Nang, VKU</p>
-            <p>ahihi@gmail.com</p>
-            <p>0123111111</p>
+        
+            <p>Address: Viet Nam,Da Nang, VKU</p>
+            <p>Gmail: ahihi@gmail.com</p>
+            <p>Phone: 0123111111</p>
           </div>
           <hr className="mb-4" />
           <div className="row align-items-center">
@@ -134,9 +121,9 @@ function Footer() {
               {" "}
               {/* chinh day ne*/}
               <p>
-                Copyright ©2024 All right reserved by:
+                Copyright ©2024 All right reserved by
                 <a href="#" style={{ textDecoration: "none" }}>
-                  <strong className="text-warning">IT Nexus</strong>
+                  <strong className="text-warning"> IT Nexus</strong>
                   {/*===============================================*/}
                 </a>
               </p>
