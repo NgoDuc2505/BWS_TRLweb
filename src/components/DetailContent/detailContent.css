@@ -1,0 +1,16 @@
+.menu_antd_custom{
+    position: fixed;
+    top: 35px;
+    left: 0;
+}
+
+.right_content{
+    position: absolute;
+    left: 25%;
+    top: 0;
+    background-color: #fff;
+}
+
+.detail_container{
+    position: relative;
+}

@@ -6,7 +6,8 @@ import { Outlet } from "react-router";
 import { useSelector } from "react-redux";
 import { setCurrentCourse } from "../../Redux/courseSlice";
 import { getDebounce } from "../../handler/Global_Handler/useDebounce";
-
+import "./detailContent.css";
+import Footer from "../Footer/Footer";
 const navLocation = [
   {
     title: "Concept",
@@ -51,7 +52,6 @@ function DetailContent() {
     console.log("re-setstate");
     setCourse(course);
     setIsPulled(true);
-    
   }, [course]);
   const items = [
     {
@@ -161,36 +161,41 @@ function DetailContent() {
     },
   ];
   return (
-    <div>
-      <Flex vertical={false}>
-        {isPulled ? (
-          <Menu
-            onClick={handleGetContent}
-            style={{
-              width: "25%",
-            }}
-            defaultSelectedKeys={["needed/INTRODUCE"]}
-            defaultOpenKeys={[`courseID`]}
-            mode="inline"
-            items={items}
-          />
-        ) : (
-          <Spin tip="Loading">Data...</Spin>
-        )}
-        <div className="right_content p-4 w-75">
-          <Breadcrumb separator="" items={navLocation} />
-          <Suspense
-            fallback={
-              <div>
-                <Skeleton active></Skeleton>
-              </div>
-            }
-          >
-            <Outlet></Outlet>
-          </Suspense>
-        </div>
-      </Flex>
-    </div>
+    <>
+      <div className="detail_container">
+        <Flex vertical={false}>
+          {isPulled ? (
+            <Menu
+              onClick={handleGetContent}
+              style={{
+                width: "25%",
+              }}
+              className="menu_antd_custom"
+              defaultSelectedKeys={["needed/INTRODUCE"]}
+              defaultOpenKeys={[`courseID`]}
+              mode="inline"
+              items={items}
+            />
+          ) : (
+            <Spin tip="Loading">Data...</Spin>
+          )}
+          <div className="right_content p-4 w-75">
+            <Breadcrumb separator="" items={navLocation} />
+            <Suspense
+              fallback={
+                <div>
+                  <Skeleton active></Skeleton>
+                </div>
+              }
+            >
+              <Outlet></Outlet>
+            </Suspense>
+          <Footer></Footer>
+          </div>
+        </Flex>
+      </div>
+      
+    </>
   );
 }
 
