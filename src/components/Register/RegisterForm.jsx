@@ -1,7 +1,33 @@
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import Footer from "../Footer/Footer";
 import "./register.css";
+import Password from "antd/es/input/Password";
 
 function RegisterForm() {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      confirmPass: "",
+    },
+    validationSchema: Yup.Object({
+      firstName: Yup.string()
+        .max(15, "Must be 15 characters or less")
+        .required("Required"),
+      lastName: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      password: Yup.string().required("Password can not be empty !").max(8,"Max password character is 8"),
+      confirmPass: Yup.string().oneOf([Yup.ref("password"), null], "Passwords must match"),
+    }),
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
     <>
       <div className="background-radial-gradient overflow-auto">
