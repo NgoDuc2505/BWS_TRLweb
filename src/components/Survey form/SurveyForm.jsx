@@ -22,8 +22,8 @@ export default function SurveyForm(prop) {
   const clickOk = () => {
     swal(
       <div>
-        <h1>Hello world!</h1>
-        <p>This is now rendered with JSX!</p>
+        <h1>Completed!</h1>
+        <p>Your review has been noted!</p>
       </div>
     );
   };
@@ -40,7 +40,7 @@ export default function SurveyForm(prop) {
   return (
     <div className="survey">
       <Modal
-        title="Basic Modal"
+        title="Feedback"
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
@@ -112,7 +112,7 @@ export default function SurveyForm(prop) {
                 </MDBCardBody>
                 <MDBCardFooter>
                   <div className="text-end">
-                    <MDBBtn onClick={clickOk}>Submit</MDBBtn>
+                    <button onClick={clickOk} className="btn_survey btn_primary">Submit</button>
                   </div>
                 </MDBCardFooter>
               </MDBCard>
