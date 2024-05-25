@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import swal from "sweetalert";
 import "animate.css";
 import {
-  MDBBtn,
   MDBCard,
   MDBCardBody,
   MDBCardFooter,
@@ -20,12 +19,12 @@ import { FormOutlined } from "@ant-design/icons";
 export default function SurveyForm(prop) {
   const { isDisplay } = prop;
   const clickOk = () => {
-    swal(
-      <div>
-        <h1>Completed!</h1>
-        <p>Your review has been noted!</p>
-      </div>
-    );
+    swal({
+      title: "Good job!",
+      text: "You submitted the form!",
+      icon: "success",
+      button: "Done",
+    });
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -112,7 +111,7 @@ export default function SurveyForm(prop) {
                 </MDBCardBody>
                 <MDBCardFooter>
                   <div className="text-end">
-                    <button onClick={clickOk} className="btn_survey btn_primary">Submit</button>
+                    <button onClick={clickOk} className="btn_survey btn btn-primary">Submit</button>
                   </div>
                 </MDBCardFooter>
               </MDBCard>
