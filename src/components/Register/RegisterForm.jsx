@@ -1,9 +1,41 @@
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import Footer from "../Footer/Footer";
 import "./register.css";
 
 function RegisterForm() {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      confirmPass: "",
+    },
+    validationSchema: Yup.object({
+      firstName: Yup.string()
+        .max(15, "Must be 15 characters or less")
+        .required("Required your first name!"),
+      lastName: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required your last name!"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Required your email !"),
+      password: Yup.string()
+        .required("Password can not be empty !")
+        .max(8, "Max password character is 8"),
+      confirmPass: Yup.string().oneOf(
+        [Yup.ref("password"), null],
+        "Passwords must match"
+      ),
+    }),
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
-    <>
+    <form onSubmit={formik.handleSubmit}>
       <div className="background-radial-gradient overflow-auto">
         <div className="container-fluid p-4">
           <div className="row">
@@ -37,20 +69,48 @@ function RegisterForm() {
                       <label htmlFor="form1" className="form-label">
                         First name
                       </label>
-                      <input type="text" className="form-control" id="form1" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="form1"
+                        {...formik.getFieldProps("firstName")}
+                      />
+                      {formik.touched.firstName && formik.errors.firstName ? (
+                        <div className="text-danger">
+                          {formik.errors.firstName}
+                        </div>
+                      ) : null}
                     </div>
                     <div className="col-md-6 mb-4">
                       <label htmlFor="form2" className="form-label">
                         Last name
                       </label>
-                      <input type="text" className="form-control" id="form2" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="form2"
+                        {...formik.getFieldProps("lastName")}
+                      />
+                      {formik.touched.lastName && formik.errors.lastName ? (
+                        <div className="text-danger">
+                          {formik.errors.lastName}
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                   <div className="mb-4">
                     <label htmlFor="form3" className="form-label">
                       Email
                     </label>
-                    <input type="email" className="form-control" id="form3" />
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="form3"
+                      {...formik.getFieldProps("email")}
+                    />
+                    {formik.touched.email && formik.errors.email ? (
+                      <div className="text-danger">{formik.errors.email}</div>
+                    ) : null}
                   </div>
                   <div className="mb-4">
                     <label htmlFor="form4" className="form-label">
@@ -60,7 +120,13 @@ function RegisterForm() {
                       type="password"
                       className="form-control"
                       id="form4"
+                      {...formik.getFieldProps("password")}
                     />
+                    {formik.touched.password && formik.errors.password ? (
+                      <div className="text-danger">
+                        {formik.errors.password}
+                      </div>
+                    ) : null}
                   </div>
                   <div className="mb-4">
                     <label htmlFor="form5" className="form-label">
@@ -70,7 +136,13 @@ function RegisterForm() {
                       type="password"
                       className="form-control"
                       id="form5"
+                      {...formik.getFieldProps("confirmPass")}
                     />
+                    {formik.touched.confirmPass && formik.errors.confirmPass ? (
+                      <div className="text-danger">
+                        {formik.errors.confirmPass}
+                      </div>
+                    ) : null}
                   </div>
                   <div className="d-flex justify-content-center mb-4">
                     <div className="form-check">
@@ -88,7 +160,7 @@ function RegisterForm() {
                       </label>
                     </div>
                   </div>
-                  <button className="btn btn-primary w-100 mb-4" size="md">
+                  <button type="submit" className="btn btn-primary w-100 mb-4" size="md">
                     Sign up
                   </button>
                   <div className="text-center">
@@ -129,7 +201,7 @@ function RegisterForm() {
         </div>
       </div>
       <Footer></Footer>
-    </>
+    </form>
   );
 }
 
