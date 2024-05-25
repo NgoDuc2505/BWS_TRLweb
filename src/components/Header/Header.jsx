@@ -79,64 +79,61 @@ function Header() {
                         <div className="v-megamenu-section-inner v-flex-1 v-p-3">
                           <div className="v-megamenu-heading v-hidden md:v-flex v-items-center">
                             <span className="v-megamenu-label v-pointer-events-none v-w-full v-flex v-items-center v-flex-1 v-text-dark-2 v-py-2 v-pl-2">
-                              How to make </span>
+                              Tutorials</span>
                           </div>
                           <div className="v-megamenu-wrapper v-pt-0">
                             <ul className="v-megamenu-menu v-list-none v-mb-0 v-p-0 v-w-full v-flex-wrap" role="menu" tabIndex={0}>
                               <li className="v-megamenu-item md:v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/" title="Presentations" target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-presentations.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/web.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Web building</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Attract your listeners</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Attract your customers</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-documents.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/1A6DFF/C822FF/two-smartphones.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Mobile Building</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Visual
-                                      docs that inform</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Engage Users Seamlessly</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-charts-graphs.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/web-analystics.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Data Analytics</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">
-                                      your data to life</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Transform Data into Decisions</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-infographics.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/code--v1.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Backend</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Share
-                                      information visually</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Power Your Applications</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-forms-surveys.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/controller.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Game Building</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Smart data collection</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Craft Immersive Worlds</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-whiteboards.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://img.icons8.com/nolan/64/windows10-personalization.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
                                     <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Graphic Design</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Draw your idea</p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Bring Ideas to Life</p>
                                   </div>
                                 </a>
                               </li>
@@ -499,9 +496,10 @@ function Header() {
                   </div>
                 </div>
               </li>
+              
               <li className="v-menu-item-templates v-parent-menu-item v-mb-3 xl:v-mb-0 v-has-menu">
                 <a className="v-parent-menu-link v-link v-relative v-z-10 v-flex v-items-center v-justify-between v-text-dark-2 v-py-2 xl:v-p-0 v-chevron-before v-chevron-after" href="#" title="Templates" rel="nofollow noopener">
-                  Templates </a>
+                  Services </a>
                 <div className="v-megamenu" style={{visibility: 'hidden'}}>
                   <div className="v-megamenu-content">
                     <div className="v-row v-full">
@@ -509,7 +507,7 @@ function Header() {
                         <div className="v-megamenu-section-inner v-flex-1 v-p-3">
                           <div className="v-megamenu-heading v-hidden md:v-flex v-items-center">
                             <span className="v-megamenu-label v-pointer-events-none v-w-full v-flex v-items-center v-flex-1 v-text-dark-2 v-py-2 v-pl-2">
-                              Templates </span>
+                              Services </span>
                             <a className="v-link v-morelink v-hidden xl:v-block v-flex-0-auto v-text-sm v-subpixel-antialiased" href="/" title="View All"  target="_self" rel="follow">
                               View All </a>
                           </div>
@@ -517,116 +515,100 @@ function Header() {
                             <ul className="v-megamenu-menu v-list-none v-mb-0 v-p-0 v-w-full v-flex-wrap" role="menu" tabIndex={0}>
                               <li className="v-megamenu-item md:v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/" target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-presentations.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://i.pinimg.com/originals/dd/9f/23/dd9f23e660a18d87b33b5e3b68f9f2d7.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Presentations</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">1000+
-                                      layouts and themes</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Free Tutorials</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Enjoy our free tutorials, covering all aspects of web development and programming.</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-infographics.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://blog.udemy.com/wp-content/uploads/2013/08/csharpprojects.jpg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Infographics</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Find
-                                      the right format for your information</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">References</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Explore our selection of references covering all popular coding languages</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-documents.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.webfame.net/wp-content/uploads/2019/10/2616398eaa72270b9f4ccca27ffb335c-1.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Documents</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Templates
-                                      for every document</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Create a Website </strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Create your own wesite with us - no setup required </p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-charts.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://i.pinimg.com/originals/9e/ed/e8/9eede84a6e9b029ddd31f5bf244466dc.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Chart
-                                        &amp; Maps</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Get
-                                      data visualization ideas</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Quizzes</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Test yourself with multiple choice questions</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-forms.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://s3.ap-south-1.amazonaws.com/townscript-production/images/610ced57-6c34-4ba6-8573-c2bdc409a18e.jpg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Forms
-                                        &amp; Surveys</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Templates
-                                      for every business document</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Get Certified</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Document your knowledge</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-reports.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://i.pinimg.com/originals/cf/00/dc/cf00dcadb139fcebf559d78ff2ac5faf.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Reports</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Beautiful
-                                      visual report templates</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Pathfinder & My Learning </strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs"> Track your learning progress and collect rewards</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-proposals.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.cwl.ca/wp-content/uploads/2023/03/membership.jpg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Proposals</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Professional
-                                      proposal templates</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Upgrade </strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-one-pagers.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://blog.devhoz.com/wp-content/uploads/2019/10/CSS-Framework-696x464.jpg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">One
-                                        Pagers</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Summarize
-                                      complex information in one page</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">CSS Framework</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Build fast and responsive sites using our free CSS framework</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-whiteboards.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.expandgh.com/wp-content/uploads/2018/02/Job-Search.jpg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Whiteboards</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Templates
-                                      to brainstorm, plan and design</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Job </strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Hire top tech talents. Streamline your hiring process for the perfect team fit</p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-social.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://videozayac.ru/wp-content/uploads/2020/04/shutterstock_294413327.png" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Social
-                                        Media Graphics</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Browse
-                                      templates for every platform</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Video </strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Learn the basics of HTML in a fun and engaging video tutorial </p>
                                   </div>
                                 </a>
                               </li>
                               <li className="v-megamenu-item v-mt-2">
                                 <a className="v-megamenu-item-link v-flex v-items-start v-relative v-h-full v-py-2.5 v-px-2 v-rounded-lg v-text-dark-3 v-text-sm" href="/"  target="_self" rel="follow">
-                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://www.visme.co/wp-content/themes/visme/images/2024/menu/i-template-training-manuals.png" />
+                                  <div className="v-megamenu-item-icon v-icon v-w-10 v-h-10 v-flex-0-auto" data-icon="https://genheration.com/wp-content/uploads/2021/01/Goals.jpeg" />
                                   <div className="v-megamenu-item-details v-flex-1">
-                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Training
-                                        Manuals</strong></p>
-                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Professional
-                                      templates for training manuals</p>
+                                    <p className="v-megamenu-item-title v-mb-0 v-text-dark-2"><strong className="v-font-normal v-subpixel-antialiased">Set Goal</strong></p>
+                                    <p className="v-megamenu-item-desc v-text-dark-3 v-mb-0 v-mt-1 v-text-xs">Get personalized learning journey based on your current skills and goals</p>
                                   </div>
                                 </a>
                               </li>
