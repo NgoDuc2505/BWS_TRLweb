@@ -51,7 +51,7 @@ const data = [
 
 const extraData = [
   {
-    id: "14",
+    id: "html",
     imgUrl: "img/cplus.png",
     title: "C++",
     describe: "This language is awesome to start...",
