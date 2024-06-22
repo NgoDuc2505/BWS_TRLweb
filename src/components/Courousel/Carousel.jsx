@@ -58,12 +58,14 @@ function Carousel() {
               />
             )}
             <Parallax translateY={['-50px', '50px']}>
-              <h1 className="title">
+              <h1 className="title"> <span>IT Nexus for you !</span></h1>
               <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=48&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+For a good dev;" />
                 <br />
-                <span>journey,</span>
+                <p className='infor'>This web is for who are new to programming and the same time <br />
+                  is also a place to review knowledge for those <br /> who have learned through programming.</p>
+               
                 <br />
-              </h1>
+              
 
               <Parallax opacity={[-1, 3]}>
                 <h2 className="links">
