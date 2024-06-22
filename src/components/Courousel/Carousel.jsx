@@ -61,7 +61,7 @@ function Carousel() {
               <h1 className="title"> <span>IT Nexus for you !</span></h1>
               <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=48&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+For a good dev;" />
                 <br />
-                <p className='infor px-5'>This web is for who are new to programming and the same time <br />
+                <p className='infor'>This web is for who are new to programming and the same time <br />
                   is also a place to review knowledge for those <br /> who have learned through programming.</p>
                
                 <br />
