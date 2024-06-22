@@ -119,7 +119,20 @@
 .loading>h1>div {
   animation: rotating 120s infinite;
 }
-
+.infor{
+  text-align: center; 
+  line-height: 1.5; 
+  color: #f3f3f3; 
+  padding: 20px; 
+  margin: 20px auto; 
+  border-radius: 10px; 
+  max-width: 600px; 
+  box-shadow: 0 0 10px rgba(157, 99, 99, 0.1);
+  background: linear-gradient(90deg, #f8f6f7, #2be57b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
 @keyframes rotating {
   from {
     transform: rotate(0deg);
