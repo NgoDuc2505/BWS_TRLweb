@@ -38,7 +38,7 @@ function ContentExtraItem(prop) {
                 <Title
                   level={2}
                   className="title_course_display"
-                  style={{ color: isColorWhite ? "#fff" : "black" ,fontSize: "5rem"}}
+                  style={{ color: isColorWhite ? "#fff" : "black" ,fontSize: "4rem"}}
                 >
                   {title}
                 </Title>
